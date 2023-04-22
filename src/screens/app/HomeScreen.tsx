@@ -7,7 +7,6 @@ const HomeScreen = () =>{
     return (
         <View style={styles.container}>
           <Text>Home Screen</Text>
-          <StatusBar style="auto" />
         </View>
       );
 }

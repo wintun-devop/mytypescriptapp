@@ -12,33 +12,38 @@ import Routes from "..";
 const AppStack = createNativeStackNavigator();
 
 // Main Home Tab
-export const HomeTab = () =>{
-    <AppStack.Navigator
-    initialRouteName={Routes.Home}
-    >
-        <AppStack.Screen 
-        name={Routes.Home}
-        component={HomeScreen}
-        />
-    </AppStack.Navigator>
-
+export const HomeTab = ({}) =>{
+    return(
+        <AppStack.Navigator
+        initialRouteName={Routes.Home}
+        >
+            <AppStack.Screen 
+            name={Routes.Home}
+            component={HomeScreen}
+            />
+        </AppStack.Navigator>
+    )
 }
 
 
-export const BlogTab = () =>{
+export const BlogTab = ({}) =>{
+    return(
     <AppStack.Navigator>
         <AppStack.Screen 
         name={Routes.Blog}
         component={BlogScreen}
         />
     </AppStack.Navigator>
+    )
 }
 
-export const VideoTab = () => {
+export const VideoTab = ({}) => {
+    return(
     <AppStack.Navigator>
         <AppStack.Screen 
         name={Routes.Vide}
         component={VideoScreen}
         />
     </AppStack.Navigator>
+    )
 }
