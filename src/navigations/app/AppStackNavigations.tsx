@@ -20,6 +20,7 @@ export const HomeTab = ({}) =>{
             <AppStack.Screen 
             name={Routes.Home}
             component={HomeScreen}
+            options={{headerShown:false}}
             />
         </AppStack.Navigator>
     )
@@ -32,6 +33,7 @@ export const BlogTab = ({}) =>{
         <AppStack.Screen 
         name={Routes.Blog}
         component={BlogScreen}
+        options={{headerShown:false}}
         />
     </AppStack.Navigator>
     )
@@ -43,6 +45,7 @@ export const VideoTab = ({}) => {
         <AppStack.Screen 
         name={Routes.Vide}
         component={VideoScreen}
+        options={{headerShown:false}}
         />
     </AppStack.Navigator>
     )
