@@ -5,6 +5,7 @@ import { createNativeStackNavigator, NativeStackScreenProps } from "@react-navig
 import HomeScreen from "../../screens/app/HomeScreen";
 import VideoScreen from "../../screens/app/VideoScreen";
 import BlogScreen from "../../screens/app/BlogScreen";
+import BlogPageScreen from "../../screens/app/BlogPageScreen";
 // Route
 import Routes from "..";
 
@@ -20,6 +21,11 @@ export const HomeTab = ({}) =>{
             <AppStack.Screen 
             name={Routes.Home}
             component={HomeScreen}
+            options={{headerShown:false}}
+            />
+            <AppStack.Screen 
+            name={Routes.BlogPage}
+            component={BlogPageScreen}
             options={{headerShown:false}}
             />
         </AppStack.Navigator>

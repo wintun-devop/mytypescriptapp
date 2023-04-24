@@ -1,10 +1,19 @@
 import React,{memo,useEffect,useState} from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View,Dimensions } from 'react-native';
+import { StyleSheet, Text, View,Dimensions,Button } from 'react-native';
 // import components
 import TopNavigation from '../../components/app/TopNavigation';
+import Routes from '../../navigations';
 
-const HomeScreen = () =>{
+interface HomeScreenProps{
+  navigation:any,
+  route:any
+}
+
+const HomeScreen:React.FC<HomeScreenProps> = ({
+navigation,
+route
+}) =>{
   return (
     <View style={styles.container}>
       <View style={styles.navigation}>
@@ -13,7 +22,12 @@ const HomeScreen = () =>{
           />
       </View>
       <View style={styles.body}>
-         
+      <Button
+      onPress={()=>{navigation.navigate(Routes.BlogPage)}}
+      title="Learn More"
+      color="#841584"
+      accessibilityLabel="Learn more about this purple button"
+/>
          
       </View>
      

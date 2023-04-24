@@ -8,6 +8,7 @@ const Routes = {
     "BlogTab":"Blog",
     // Screem
     "Blog":"BlogScreen",
+    "BlogPage":"BlogPageScreen",
     // Tab
     "VideoTab":"Video",
     "Vide":"VideoScreen"
